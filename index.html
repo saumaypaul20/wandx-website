@@ -22,44 +22,49 @@
     <link rel="stylesheet" href="assets/css/responsive.css">
     <style>
         .tab {
-  overflow: hidden;
- 
- 
-}
+        overflow: hidden;
+        
+        
+        }
+        .white-tabs button{
+            float: none !important;
+            margin: 0 auto;
+            color: #fff;
+        }
 
-/* Style the buttons inside the tab */
-.tab button {
-  background-color: inherit;
-  float: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 14px 0px;
-  transition: 0.3s;
-  font-size: 17px;
-  margin-right: 20px;
-}
+        /* Style the buttons inside the tab */
+        .tab button {
+        background-color: inherit;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 0px;
+        transition: 0.3s;
+        font-size: 17px;
+        margin-right: 20px;
+        }
 
-/* Change background color of buttons on hover */
-.tab button:hover {
-  border-bottom:1px solid #8731E8;
-   
-  
-}
+        /* Change background color of buttons on hover */
+        .tab button:hover {
+        border-bottom:1px solid #8731E8;
+        
+        
+        }
 
-/* Create an active/current tablink class */
-.tab button.active {
-    border-bottom:1px solid #8731E8;
-    font-weight: 600;
-}
+        /* Create an active/current tablink class */
+        .tab button.active,.tab button.active2 {
+            border-bottom:1px solid #8731E8;
+            font-weight: 600;
+        }
 
-/* Style the tab content */
-.tabcontent {
-  display: none;
-  padding: 16px 0px;
-  
-  border-top: none;
-}
+        /* Style the tab content */
+        .tabcontent, .tabcontent2 {
+        display: none;
+        padding: 16px 0px;
+        
+        border-top: none;
+        }
     </style>
 
 </head>
@@ -232,13 +237,13 @@
                               </div>
                               
                               <div id="London" class="tabcontent" style="display: block" >
-                                <a href="#" class="btn"><i class="fab fa-android"></i> Android</a>
+                                <a href="#" class="btn mt-2"><i class="fab fa-android"></i> Android</a>
                               </div>
                               
                               <div id="Paris" class="tabcontent" >
-                                  <button class="btn"><i class="fab fa-apple"></i> macOs</button>
-                                  <button class="btn" onclick="window.location.href='https://storage.googleapis.com/wandx-desktop-wallet/WandX%20Dapp%20Setup%201.0.0.exe'"><i class="fab fa-windows" ></i> Windows</button>
-                                <button href="#" class="btn"><i class="fab fa-linux"></i> Linux</button>
+                                  <button class="btn mt-2"><i class="fab fa-apple"></i> macOs</button>
+                                  <button class="btn mt-2" onclick="window.location.href='https://storage.googleapis.com/wandx-desktop-wallet/WandX%20Dapp%20Setup%201.0.0.exe'"><i class="fab fa-windows" ></i> Windows</button>
+                                <button href="#" class="btn mt-2"><i class="fab fa-linux"></i> Linux</button>
                               </div>
                               
                             
@@ -246,8 +251,8 @@
                     </div>
                     <div class="col-12 col-md-5 text-center">
                         <!-- Welcome Thumb -->
-                        <div class="welcome-thumb" data-aos="fade-right" data-aos-delay="500" data-aos-duration="1000">
-                            <img src="assets/img/screens/2.jpeg" alt="signin screen" style="height: 620px;">
+                        <div class="welcome-thumb" data-aos="fade-right" data-aos-delay="500" data-aos-duration="1000" style="margin: 0 auto;">
+                            <img src="assets/img/screens/2.jpeg" alt="signin screen"  >
                         </div>
                     </div>
                 </div>
@@ -255,16 +260,138 @@
         </section>
         <!-- ***** Welcome Area End ***** -->
 
+        <!-- <section id="features" class="section features-area ptb_100">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-10 col-lg-12">
+                    
+                        <div class="section-heading ">
+                         
+                            <p style="font-size: 22px; line-height: 30px ;color: #000" class="d-none d-sm-block mt-4">We aim to provide a bank like experience for everyone to be part of the alternate financial system built out of cryptocurrencies. We aim to redesign banking from the first principle design principles by enabling the three pillars of banking on Bitcoin - Store, Spend, Lend/take credit</p>
+                            <p style="font-size: 22px; line-height: 30px ;color: #000" class="d-block d-sm-block mt-4 ">We are integrating decentralized KYC, decentralized credit scoring, social account recovery, fiat on-off ramps, investing in a basket or group of cryptocurrencies based on performance, and simply deposit your Bitcoin in an interest bearing account through enabling the Bitcoin to be “staked” on different Blockchains.</p>
+                            <p style="font-size: 22px; line-height: 30px ;color: #000" class="d-block d-sm-block mt-4 ">Payment using Bitcoin would happen using Bitcoin lightning and the PayID protocol. <br>
+                                Storing Bitcoin would happen on the device of the user. The “wallet” would be a part of the FIO protocol. <br>
+                                KYC would happen with decentralized KYC partners. <br>
+                                Taking credit would only happen once a credit score has been built using decentralized credit systems. Credit can be given by any party in our system. <br>
+                                Every action on the app is through a decentralized platform
+                                </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
         <!-- ***** Features Area Start ***** -->
-        <section id="features" class="section features-area ptb_100">
+        <section id="features" class="section features-area ptb_100 bg-gray">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-12 col-md-10 col-lg-6">
                         <!-- Section Heading -->
                         <div class="section-heading text-center">
                             <h2>Explore Premium Features</h2>
-                            <p class="d-none d-sm-block mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati dignissimos quae quo ad iste ipsum officiis deleniti asperiores sit.</p>
-                            <p class="d-block d-sm-none mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati.</p>
+                            <!-- <p class="d-none d-sm-block mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati dignissimos quae quo ad iste ipsum officiis deleniti asperiores sit.</p>
+                            <p class="d-block d-sm-none mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati.</p> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-6">
+                        <!-- Icon Box -->
+                        <div class="icon-box text-center p-4 wow fadeInUp" data-wow-duration="2s">
+                            <!-- Featured Icon -->
+                            <div class="featured-icon mb-3">
+                                <span class="flaticon-tap"></span>
+                            </div>
+                            <!-- Icon Text -->
+                            <div class="icon-text">
+                                <h3 class="mb-2">Payment</h3>
+                                <p>Send BTC instantly to other payID addresses.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-6">
+                        <!-- Icon Box -->
+                        <div class="icon-box text-center p-4 wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.2s">
+                            <!-- Featured Icon -->
+                            <div class="featured-icon mb-3">
+                                <span class="flaticon-fingerprint"></span>
+                            </div>
+                            <!-- Icon Text -->
+                            <div class="icon-text">
+                                <h3 class="mb-2">Store</h3>
+                                <p> Store with a custodian or a social key recovery mechanism.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-6">
+                        <!-- Icon Box -->
+                        <div class="icon-box text-center p-4 wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.4s">
+                            <!-- Featured Icon -->
+                            <div class="featured-icon mb-3">
+                                <span class="flaticon-notification"></span>
+                            </div>
+                            <!-- Icon Text -->
+                            <div class="icon-text">
+                                <h3 class="mb-2">Lend/borrow
+                                </h3>
+                                <p>Lend or borrow once your credit score is established, and some kind of collateral can be put in terms of staking rewards or another cryptocurrency.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-6">
+                        <!-- Icon Box -->
+                        <div class="icon-box text-center p-4 wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.6s">
+                            <!-- Featured Icon -->
+                            <div class="featured-icon mb-3">
+                                <span class="flaticon-place"></span>
+                            </div>
+                            <!-- Icon Text -->
+                            <div class="icon-text">
+                                <h3 class="mb-2">Invest</h3>
+                                <p> Invest in an SIP of Bitcoin or an index of the top cryptocurrencies or on a sector specific set of cryptocurrencies..</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="col-12 col-md-6 col-lg-4">
+                      
+                        <div class="icon-box text-center p-4 wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.8s">
+                             
+                            <div class="featured-icon mb-3">
+                                <span class="flaticon-settings"></span>
+                            </div>
+                            
+                            <div class="icon-text">
+                                <h3 class="mb-2">Powerful Settings</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis culpa expedita dignissimos.</p>
+                            </div>
+                        </div>
+                    </div> -->
+                    <!-- <div class="col-12 col-md-6 col-lg-4">
+                        
+                        <div class="icon-box text-center p-4 wow fadeInUp" data-wow-duration="2s" data-wow-delay="1s">
+                            
+                            <div class="featured-icon mb-3">
+                                <span class="flaticon-language"></span>
+                            </div>
+                            
+                            <div class="icon-text">
+                                <h3 class="mb-2">Multiple Language</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis culpa expedita dignissimos.</p>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+        <section id="features" class="section features-area ptb_100" >
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-10 col-lg-6">
+                        <!-- Section Heading -->
+                        <div class="section-heading text-center">
+                            <h2>Advantages</h2>
+                            <!-- <p class="d-none d-sm-block mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati dignissimos quae quo ad iste ipsum officiis deleniti asperiores sit.</p>
+                            <p class="d-block d-sm-none mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati.</p> -->
                         </div>
                     </div>
                 </div>
@@ -543,10 +670,48 @@
                             <div class="work-icon">
                                 <img class="avatar-md" src="assets/img/icon/work/app.png" alt="">
                             </div>
+                            <h4 class="text-white py-3">Decentralized KYC</h4>
+                            <p class="text-white"> </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-4">
+                        <!-- Single Work -->
+                        <div class="single-work text-center p-3">
+                            <!-- Work Icon -->
+                            <div class="work-icon">
+                                <img class="avatar-md" src="assets/img/icon/work/app.png" alt="">
+                            </div>
                             <h4 class="text-white py-3">Deposit in an interest bearing account</h4>
                             <p class="text-white"> </p>
                         </div>
                     </div>
+                    <div class="col-12 col-md-4">
+                        <!-- Single Work -->
+                        <div class="single-work text-center p-3">
+                            <!-- Work Icon -->
+                            <div class="work-icon">
+                                <img class="avatar-md" src="assets/img/icon/work/app.png" alt="">
+                            </div>
+                            <h4 class="text-white py-3">Social key recovery</h4>
+                            <p class="text-white"> </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <!-- Single Work -->
+                        <div class="single-work text-center p-3">
+                            <!-- Work Icon -->
+                            <div class="work-icon">
+                                <img class="avatar-md" src="assets/img/icon/work/app.png" alt="">
+                            </div>
+                            <h4 class="text-white py-3">Decentralized credit scoring</h4>
+                            <p class="text-white"> </p>
+                        </div>
+                    </div>
+                  
+                  
+                   
                 </div>
             </div>
         </section>
@@ -839,7 +1004,7 @@
                                             <div id="collapseOne" class="collapse show" data-parent="#sApp-accordion">
                                                 <!-- Card Body -->
                                                 <div class="card-body px-0 py-3">
-                                                    We enable lending of Bitcoin for currencies, stocks, and other cryptocurrencies. We enable staking of Bitcoin for Tezos
+                                                    We enable lending of Bitcoin for currencies, stocks, and other cryptocurrencies. We enable staking of Bitcoin for Tezos  and other staking tokens.
 
                                                 </div>
                                             </div>
@@ -934,12 +1099,29 @@
                             <p class="text-white my-3 d-none d-sm-block">sApp is available for all devices, consectetur adipisicing elit. Itaque at harum quam explicabo. Aliquam optio, delectus, dolorem quod neque eos totam. Delectus quae animi tenetur voluptates doloribus commodi dicta modi aliquid deserunt, quis maiores nesciunt autem, aperiam natus.</p>
                             <p class="text-white my-3 d-block d-sm-none">sApp is available for all devices, consectetur adipisicing elit. Vel neque, cumque. Temporibus eligendi veniam, necessitatibus aut id labore nisi quisquam.</p>
                             <!-- Store Buttons -->
-                            <div class="button-group store-buttons d-flex justify-content-center">
+                            <!-- <div class="button-group store-buttons d-flex justify-content-center">
                                 <a href="#" class="btn"><i class="fab fa-android"></i> Android</a>
                                 <a href="#" class="btn"><i class="fab fa-apple"></i> macOs</a>
                                 <a href="#" class="btn"><i class="fab fa-windows"></i> Windows</a>
                                 <a href="#" class="btn"><i class="fab fa-linux"></i> Linux</a>
-                            </div>
+                            </div> -->
+
+                            <div class="tab white-tabs">
+                                <button class="tablinks2 active2" onclick="openCity2(event, 'London1')">Mobile</button>
+                                <button class="tablinks2" onclick="openCity2(event, 'Paris1')">Desktop</button>
+                                
+                              </div>
+                              
+                              <div id="London1" class="tabcontent2" style="display: block" >
+                                <a href="#" class="btn mt-2"><i class="fab fa-android"></i> Android</a>
+                              </div>
+                              
+                              <div id="Paris1" class="tabcontent2" >
+                                  <button class="btn mt-2"><i class="fab fa-apple"></i> macOs</button>
+                                  <button class="btn mt-2" onclick="window.location.href='https://storage.googleapis.com/wandx-desktop-wallet/WandX%20Dapp%20Setup%201.0.0.exe'"><i class="fab fa-windows" ></i> Windows</button>
+                                <button href="#" class="btn mt-2"><i class="fab fa-linux"></i> Linux</button>
+                              </div>
+                              
                             <!-- <span class="d-inline-block text-white fw-3 font-italic mt-3">* Available on iPhone, iPad and all Android devices</span> -->
                         </div>
                     </div>
@@ -1169,6 +1351,20 @@
           }
           document.getElementById(cityName).style.display = "block";
           evt.currentTarget.className += " active";
+        }
+
+        function openCity2(evt, cityName) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent2");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablinks2");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active2", "");
+          }
+          document.getElementById(cityName).style.display = "block";
+          evt.currentTarget.className += " active2";
         }
         </script>
 
